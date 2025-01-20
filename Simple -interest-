@@ -1,0 +1,24 @@
+# Simple-interest-
+coding:
+import java.util.Scanner;
+
+public class SimpleInterestCalculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the Principal amount (P): ");
+        double principal = scanner.nextDouble();
+        System.out.print("Enter the Rate of Interest (R): ");
+        double rate = scanner.nextDouble();
+        System.out.print("Enter the Time (T in years): ");
+        double time = scanner.nextDouble();
+        double simpleInterest = (principal * rate * time) / 100;
+        System.out.println("Simple Interest (SI): " + simpleInterest);
+        scanner.close();
+    }
+}
+
+output:
+Enter the Principal amount (P): 5000
+Enter the Rate of Interest (R): 5
+Enter the Time (T in years): 2
+Simple Interest (SI): 500.0
